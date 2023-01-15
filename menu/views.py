@@ -30,7 +30,6 @@ class ToppingListAPIView(ListAPIView):
         return super().get(request, *args, *kwargs)
 
 
-@extend_schema()
 class FoodListAPIView(ListAPIView):
     queryset = FoodCategory.objects.filter(
         is_publish=True,

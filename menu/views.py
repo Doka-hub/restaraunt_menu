@@ -8,7 +8,6 @@ from drf_spectacular.utils import (
 
 from rest_framework.generics import ListAPIView
 
-from .filters import filter_none_data_clear
 from .serializers import (
     FoodCategoryListSerializer,
     ToppingSerializer,

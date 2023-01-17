@@ -45,7 +45,7 @@ class FoodListAPIView(ListAPIView):
                 'foods',
                 queryset=Food.objects.filter(
                     is_publish=True,
-                    **filter_none_data_clear(food_filter_serializer.data)
+                    **food_filter_serializer.data
                 ),
             ),
         )
